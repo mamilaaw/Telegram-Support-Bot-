@@ -1,0 +1,2 @@
+<?php
+define('BOT_TOKEN', '1745644159:AAEGANh7kdhtcMvAS-F9KkOCPFGT4_A6qqs');
