@@ -11,7 +11,7 @@ $data = array(
 
 $json_string = json_encode($data);
 // Your webhook URL
-$webhook_url = 'https://hooks.slack.com/services/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';
+$webhook_url = 'YOUR SLACK API HOOK';
 
 $slack_call = curl_init();
 curl_setopt($slack_call, CURLOPT_CUSTOMREQUEST, "POST");
