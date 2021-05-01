@@ -8,10 +8,10 @@ function perform_reply($update) {
     //$update->post_fields[0]->chat_id = $update->message->chat->id;
    switch ($update->message->reply_to_message->text) {
    case ('Please describe your problem and I\'ll forward your message.'):
-       $id=1120328704; //for talent
+       $id=111; //First Account
        break;
    case ('Please describe your issue and I\'ll forward your message.'):
-       $id= 1098187878;
+       $id= 222; // Second account
        break;
    default: $id = 1120328704; break;
    }
@@ -19,15 +19,9 @@ function perform_reply($update) {
     switch ($update->message->reply_to_message->text) {
         case ('Please describe your problem and I\'ll forward your message.'):
         case ('Please describe your issue and I\'ll forward your message.'):
-            // Forward the message
-//            if($person=="client"){
-//            $id=1098187878; 
-//            }
-//            else{
-//              $id=1120328704;
-//            }
+
             
-            $update->post_fields[0]->chat_id = $id;//"@Arkebesuk" ;//
+            $update->post_fields[0]->chat_id = $id;//
             $update->post_fields[1]->chat_id = $id;
            $mytext = $update->message->from->id . "// Name:" . $update->message->from->first_name . "\n" .
                     "Username: @".$update->message->from->username."\n".
